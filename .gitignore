@@ -1,0 +1,6 @@
+.DS_Store
+*.log
+# skrypt składający stronę z plików projektu (ścieżki wewnętrzne)
+zloz.py
+# źródła wklejone do index.html jako SVG
+zrodla/

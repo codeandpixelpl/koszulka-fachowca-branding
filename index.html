@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Koszulka Fachowca · identyfikacja wizualna</title>
+<meta name="description" content="Nowe logo, sygnet, kolory i nośniki marki Koszulka Fachowca. Na końcu księga znaku w PDF.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="obrazy/favicon.svg" type="image/svg+xml">
+<script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('ruch')</script>
+<style>
+@font-face{font-family:Montserrat;src:url(fonty/montserrat.woff2) format("woff2");font-weight:100 900;font-display:swap}
+:root{--pom:#FC4C02;--grafit:#191918;--bial:#FFFFFF;--beton:#EEECE7;--szary:#6E6D68;--linia:#D6D3CB;
+--tlo:#E2E0DA;--max:1400px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--tlo);color:var(--grafit);font:400 17px/1.6 Montserrat,system-ui,sans-serif}
+img{display:block;max-width:100%;height:auto}
+figure{margin:0}
+.naglowek{max-width:var(--max);margin:0 auto;padding:28px 24px;display:flex;justify-content:space-between;
+  align-items:baseline;gap:16px;flex-wrap:wrap}
+.naglowek{align-items:center}
+.naglowek .projekt{display:flex;flex-direction:column;align-items:flex-end;gap:2px;text-align:right}
+.naglowek strong{font-weight:800;font-size:18px}
+.naglowek .projekt span{color:var(--szary);font-weight:500;font-size:14px}
+.cp{display:flex;align-items:center;gap:12px;color:var(--grafit)}
+.cp-ikona{width:53px;height:32.4px;flex:none}
+.cp-napis{position:relative;width:144.5px;height:34.6px;flex:none}
+.cp-slowo{position:absolute;left:0;top:0;width:144.5px;height:20.5px}
+.cp-dopisek{position:absolute;left:39.8px;top:23.6px;width:104.6px;height:11px}
+main{max-width:var(--max);margin:0 auto;background:var(--beton)}
+.plansza{display:flex;align-items:center;justify-content:center;overflow:hidden}
+.plansza img{height:auto}
+.foto{position:relative;background:#d9d6ce}
+.foto img{width:100%}
+.tag{display:none;position:absolute;left:16px;top:16px;z-index:1;background:rgba(25,25,24,.82);color:#fff;
+  font:500 12px/1 Montserrat,system-ui,sans-serif;padding:8px 10px;border-radius:2px;letter-spacing:.02em}
+.tekst{display:grid;grid-template-columns:minmax(0,260px) minmax(0,640px);gap:56px;justify-content:center;
+  padding:128px 64px}
+.tekst h2{font-weight:800;font-size:34px;line-height:1.1;margin:0}
+.tekst dl{margin:0;font-size:14px;line-height:1.5}
+.tekst dt{color:var(--szary);font-weight:500}
+.tekst dd{margin:0 0 20px;font-weight:600}
+.tekst p{margin:0 0 20px;font-size:19px;line-height:1.65}
+.tekst p:last-child{margin-bottom:0}
+.rozdzial .opis{padding:136px 64px 72px;max-width:956px;margin:0 auto}
+.rozdzial .nr{display:block;color:var(--pom);font-weight:800;font-size:22px;letter-spacing:.04em;margin-bottom:18px}
+.rozdzial h2{font-weight:800;font-size:64px;line-height:1.02;letter-spacing:-.01em;margin:0 0 22px}
+.rozdzial p{margin:0;font-size:19px;line-height:1.6;max-width:640px}
+.dzielony{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.dzielony .opis{padding:96px 64px;margin:0;display:flex;flex-direction:column;justify-content:center}
+.dzielony .foto img{height:100%;object-fit:cover}
+.para{display:grid;grid-template-columns:1fr 1fr}
+.para .plansza{aspect-ratio:4 / 5}
+.przedpo{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:0 64px 96px}
+.przedpo figcaption{font-size:14px;font-weight:600;color:var(--szary);margin:0 0 12px}
+.przedpo .karta{background:#fff;aspect-ratio:4 / 3;display:flex;align-items:center;justify-content:center}
+.rysunek{padding:0 64px}
+.rysunek img{width:100%}
+.podpis{max-width:956px;margin:0 auto;padding:20px 64px 96px;font-size:15px;color:var(--szary)}
+.animacja{background:var(--grafit);aspect-ratio:16 / 9;display:flex;align-items:center;justify-content:center}
+.anim-svg{width:56%;height:auto;overflow:visible}
+.a-w1,.a-w2,.a-kask,.a-kropka{transform-box:fill-box}
+.a-w1{animation:aw1 7s infinite}
+.a-w2{animation:aw2 7s infinite}
+.a-kask{animation:akask 7s infinite}
+.a-kropka{transform-origin:center;animation:akropka 7s infinite}
+@keyframes aw1{0%,6%{opacity:0;transform:translateY(18%)}16%,88%{opacity:1;transform:none}96%,100%{opacity:0}}
+@keyframes aw2{0%,14%{opacity:0;transform:translateY(18%)}24%,88%{opacity:1;transform:none}96%,100%{opacity:0}}
+@keyframes akask{0%,30%{opacity:0;transform:translateY(-140%)}40%{opacity:1;transform:translateY(6%)}
+  44%{transform:translateY(-3%)}47%,88%{opacity:1;transform:none}96%,100%{opacity:0}}
+@keyframes akropka{0%,52%{opacity:0;transform:scale(0)}58%{opacity:1;transform:scale(1.25)}62%,88%{opacity:1;transform:none}
+  96%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.a-w1,.a-w2,.a-kask,.a-kropka{animation:none}}
+.paleta{display:grid;grid-template-columns:repeat(4,1fr)}
+.kolor{aspect-ratio:3 / 4;padding:32px;display:flex;flex-direction:column;justify-content:space-between;font-size:14px}
+.kolor strong{font-size:22px;font-weight:800}
+.kolor span{display:block;line-height:1.7}
+.kolor.ciemny{color:#fff}
+.kolor.jasny{box-shadow:inset 0 0 0 1px var(--linia)}
+.kroj{display:grid;grid-template-columns:minmax(0,260px) minmax(0,640px);gap:24px 56px;justify-content:center;
+  padding:96px 64px 128px}
+.kroj .aa{font-weight:800;font-size:168px;line-height:.9;letter-spacing:-.02em}
+.kroj .alfabet p{margin:0 0 6px;font-weight:600;font-size:22px;line-height:1.4;word-break:break-all}
+.grubosci{grid-column:1 / -1;list-style:none;margin:40px 0 0;padding:0;max-width:956px;width:100%;justify-self:center}
+.grubosci li{display:grid;grid-template-columns:200px 220px 1fr;gap:16px;align-items:baseline;
+  border-top:1px solid var(--linia);padding:18px 0}
+.grubosci .g{font-weight:600;font-size:15px}
+.grubosci .u{color:var(--szary);font-size:14px}
+.grubosci .p{font-size:30px;line-height:1.2}
+.strona-ksiegi{padding:48px 64px 0}
+.strona-ksiegi img{width:100%;box-shadow:0 1px 2px rgba(0,0,0,.08),0 12px 32px rgba(0,0,0,.08)}
+.strona-ksiegi:last-of-type{padding-bottom:96px}
+.autorzy{background:var(--grafit);color:#fff;padding:96px 64px}
+.autorzy dl{max-width:956px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.autorzy dt{color:#9b9a95;font-size:13px;font-weight:500;margin-bottom:6px}
+.autorzy dd{margin:0;font-weight:600;font-size:16px}
+.pobierz{background:var(--grafit);color:#fff;text-align:center;padding:24px 24px 144px;border-top:1px solid #2e2e2c}
+.pobierz h2{font-weight:800;font-size:44px;line-height:1.1;margin:88px 0 14px}
+.pobierz p{color:#b5b4ae;margin:0 0 40px;font-size:16px}
+.przycisk{display:inline-flex;align-items:center;gap:14px;background:var(--pom);color:#fff;text-decoration:none;
+  font-weight:700;font-size:19px;padding:22px 36px;border-radius:2px;transition:background .15s}
+.przycisk:hover,.przycisk:focus-visible{background:#ff6a26}
+.przycisk:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.przycisk svg{width:24px;height:24px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.stopka{max-width:var(--max);margin:0 auto;padding:24px;color:var(--szary);font-size:13px}
+.budowa{position:relative;padding:0 64px}
+.budowa-svg{display:block;width:100%;height:auto;font-family:Montserrat,system-ui,sans-serif}
+.budowa-svg :is(.b-linia,.b-pion,.b-wym,.b-w1,.b-w2,.b-kask,.b-kropka,.b-etyk){transform-box:fill-box}
+.powtorz{display:none}
+.ruch .powtorz{display:inline-flex;align-items:center;gap:6px;position:absolute;right:80px;bottom:16px;
+  font:600 13px/1 Montserrat,system-ui,sans-serif;color:var(--grafit);background:rgba(255,255,255,.7);
+  border:1px solid var(--linia);border-radius:999px;padding:8px 12px;cursor:pointer;opacity:0;transition:opacity .4s 3.6s}
+.ruch .budowa.w .powtorz{opacity:1}
+.powtorz:hover{background:#fff}
+.powtorz:focus-visible{outline:2px solid var(--pom);outline-offset:2px}
+.powtorz svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+@keyframes bLin{from{transform:scaleX(0)}}
+@keyframes bPion{from{transform:scaleY(0)}}
+@keyframes bEtyk{from{opacity:0;transform:translateX(-14px)}}
+@keyframes bRz{from{opacity:0;transform:translateY(38%)}}
+@keyframes bKask{0%{opacity:0;transform:translateY(-170%) rotate(-8deg)}55%{opacity:1;transform:translateY(5%) rotate(1deg)}
+  72%{transform:translateY(-3%)}100%{opacity:1;transform:none}}
+@keyframes bKrop{0%{opacity:0;transform:scale(0)}60%{opacity:1;transform:scale(1.35)}100%{opacity:1;transform:none}}
+@keyframes bWym{from{opacity:0;transform:scale(.6)}}
+.ruch .budowa:not(.w) :is(.b-linia,.b-pion,.b-etyk,.b-w1,.b-w2,.b-kask,.b-kropka,.b-wym){opacity:0}
+.ruch .budowa.w .b-linia{transform-origin:0 50%;animation:bLin .9s var(--e) both;animation-delay:calc(var(--i) * .12s)}
+.ruch .budowa.w .b-pion{transform-origin:50% 0;animation:bPion 1s var(--e) .25s both}
+.ruch .budowa.w .b-etyk{animation:bEtyk .7s var(--o) both;animation-delay:calc(var(--i) * .12s + .45s)}
+.ruch .budowa.w .b-w1{animation:bRz .8s var(--o) .8s both}
+.ruch .budowa.w .b-w2{animation:bRz .8s var(--o) .98s both}
+.ruch .budowa.w .b-kask{animation:bKask .95s var(--o) 1.55s both}
+.ruch .budowa.w .b-kropka{transform-origin:50% 50%;animation:bKrop .5s var(--o) 2.3s both}
+.ruch .budowa.w .b-wym{transform-origin:50% 50%;animation:bWym .6s var(--o) both;animation-delay:calc(var(--i) * .16s + 2.6s)}
+.social{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:0 64px 96px}
+.social figure{margin:0}
+.social img{width:100%;box-shadow:0 1px 2px rgba(0,0,0,.08),0 14px 34px rgba(0,0,0,.12)}
+.skrot{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(0,1fr);aspect-ratio:4 / 3;gap:12px;
+  padding:96px 64px;grid-template-areas:"logo logo foto syg" "aa pal foto kask" "post ekipa ekipa tel"}
+.kafel{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;border-radius:4px}
+.kafel.pom{background:var(--pom)}.kafel.beton{background:#fff}.kafel.grafit{background:var(--grafit)}
+.kafel.bial{background:#fff;flex-direction:column}
+.kafel .znak{width:56%}
+.kafel.pom .znak{width:62%}
+.kafel.zdj img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.kafel .aa{font-weight:800;font-size:clamp(56px,9vw,132px);line-height:1;letter-spacing:-.02em}
+.kafel .podp{font-weight:600;font-size:14px;color:var(--szary);margin-top:8px}
+.kafel .pasy{position:absolute;inset:0;display:grid;grid-template-columns:2fr 1.4fr 1fr 1fr}
+.kafel .pasy i:nth-child(3){box-shadow:inset 1px 0 0 var(--linia)}
+.kafel.pal::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px var(--linia);border-radius:4px;pointer-events:none}
+.kafel.post{background:#121211}
+.kafel.post img{object-fit:contain}
+/* ---------- ruch: tylko z klasą .ruch na <html>, którą skrypt w <head> ustawia, gdy system nie prosi o ograniczenie animacji */
+.ekran{position:relative}
+.ekran .wl{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lamele{display:none}
+.ruch{--e:cubic-bezier(.65,0,.15,1);--o:cubic-bezier(.2,.7,.1,1)}
+@keyframes wej{from{opacity:0;transform:translateY(-10px)}}
+.ruch .naglowek>*{animation:wej .9s var(--o) both}
+.ruch .naglowek>*+*{animation-delay:.12s}
+.ruch [data-a=w]{opacity:0;transform:translateY(26px);transition:opacity .9s var(--o),transform 1s var(--o);
+  transition-delay:calc(var(--i,0) * 90ms)}
+.ruch [data-a=w].w{opacity:1;transform:none}
+.ruch [data-a=h] .m{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em}
+.ruch [data-a=h] .m>span{display:inline-block;transform:translateY(108%);transition:transform 1s var(--e);
+  transition-delay:calc(var(--i) * 70ms)}
+.ruch [data-a=h].w .m>span{transform:none}
+/* przycięcie na obrazie, nie na figurze: IntersectionObserver nie widzi elementu przyciętego w całości */
+.ruch [data-a=foto]{overflow:hidden;background:transparent}
+/* zdjęcie zostaje lekko powiększone (1.07), żeby paralaksa (właściwość translate, ustawia ją skrypt) nie odsłaniała brzegów */
+.ruch [data-a=foto] img{clip-path:inset(100% 0 0 0);transform:scale(1.2);will-change:translate;
+  transition:clip-path 1.25s var(--e),transform 1.9s var(--o)}
+.ruch [data-a=foto].w img{clip-path:inset(0);transform:scale(1.07)}
+@media (hover:hover){.ruch [data-a=foto].w:hover img{transform:scale(1.11);transition:clip-path 1.25s var(--e),transform 1.2s var(--o)}}
+.ruch .para [data-a=foto]+[data-a=foto]{transition-delay:.14s}
+.ruch .para [data-a=foto]+[data-a=foto] img{transition-delay:.14s}
+.ruch .ekran .wl{opacity:0}
+@keyframes wlacz{0%{opacity:0}35%{opacity:1;filter:brightness(1.35)}100%{opacity:1;filter:none}}
+.ruch .ekran.w .wl{animation:wlacz 1.1s 1.6s both}
+.ruch [data-a=plansza] img{opacity:0;transform:translateY(5%) scale(.96);transition:opacity 1s var(--o),transform 1.3s var(--o)}
+.ruch [data-a=plansza].w img{opacity:1;transform:none}
+.ruch .roleta{position:relative}
+.ruch .lamele{display:flex;flex-direction:column;position:absolute;inset:0;z-index:1;pointer-events:none}
+.ruch .lamele i{background:var(--grafit);box-shadow:inset 0 -1px 0 #2c2c2a;transform-origin:50% 0;
+  transition:transform .75s var(--e);transition-delay:calc((8 - var(--i)) * 55ms + .3s)}
+.ruch .roleta.w .lamele i{transform:scaleY(0)}
+.ruch .roleta img{transition-delay:.95s}
+.ruch [data-a=paleta] .kolor{clip-path:inset(100% 0 0 0);transition:clip-path 1.1s var(--e)}
+.ruch [data-a=paleta] .kolor>*{opacity:0;transition:opacity .8s var(--o)}
+.ruch [data-a=paleta].w .kolor{clip-path:inset(0)}
+.ruch [data-a=paleta].w .kolor>*{opacity:1}
+.ruch [data-a=paleta] .kolor:nth-child(2),.ruch [data-a=paleta] .kolor:nth-child(2)>*{transition-delay:.1s}
+.ruch [data-a=paleta] .kolor:nth-child(3),.ruch [data-a=paleta] .kolor:nth-child(3)>*{transition-delay:.2s}
+.ruch [data-a=paleta] .kolor:nth-child(4),.ruch [data-a=paleta] .kolor:nth-child(4)>*{transition-delay:.3s}
+.ruch [data-a=paleta] .kolor>*{transition-delay:.7s !important}
+.ruch [data-a=kroj] .aa{font-weight:100;transition:font-weight 2s var(--e)}
+.ruch [data-a=kroj].w .aa{font-weight:800}
+.ruch [data-a=kroj] .grubosci li{opacity:0;transform:translateY(18px);transition:opacity .8s var(--o),transform .9s var(--o)}
+.ruch [data-a=kroj].w .grubosci li{opacity:1;transform:none}
+.ruch [data-a=kroj] .p{transition:font-weight 1.6s var(--e)}
+.ruch [data-a=kroj]:not(.w) .p{font-weight:100 !important}
+.ruch [data-a=kroj] .grubosci li:nth-child(2),.ruch [data-a=kroj] .grubosci li:nth-child(2) .p{transition-delay:.12s}
+.ruch [data-a=kroj] .grubosci li:nth-child(3),.ruch [data-a=kroj] .grubosci li:nth-child(3) .p{transition-delay:.24s}
+.ruch [data-a=kroj] .grubosci li:nth-child(4),.ruch [data-a=kroj] .grubosci li:nth-child(4) .p{transition-delay:.36s}
+.ruch [data-a=rys] img{clip-path:inset(0 100% 0 0);transition:clip-path 1.6s var(--e)}
+.ruch [data-a=rys].w img{clip-path:inset(0)}
+.ruch .wypelnij .sl{color:#B4B1A9;transition:color .3s}
+.ruch .wypelnij .sl.on{color:var(--grafit)}
+@media (max-width:900px){
+  .tekst,.kroj{grid-template-columns:1fr;gap:28px;padding:80px 24px}
+  .rozdzial .opis,.dzielony .opis{padding:88px 24px 48px}
+  .rozdzial h2{font-size:44px}
+  .dzielony,.para,.przedpo{grid-template-columns:1fr}
+  .przedpo{padding:0 24px 72px}
+  .rysunek,.strona-ksiegi,.budowa{padding-left:24px;padding-right:24px}
+  .ruch .powtorz{right:32px;bottom:8px}
+  .podpis{padding:16px 24px 72px}
+  .paleta{grid-template-columns:repeat(2,1fr)}
+  .social{grid-template-columns:1fr 1fr;padding:0 24px 72px}
+  .skrot{grid-template-columns:1fr 1fr;aspect-ratio:auto;grid-auto-rows:42vw;padding:72px 24px;
+    grid-template-areas:"logo logo" "foto syg" "foto kask" "aa pal" "post tel" "ekipa ekipa"}
+  .grubosci li{grid-template-columns:1fr;gap:4px}
+  .autorzy{padding:72px 24px}
+  .autorzy dl{grid-template-columns:repeat(2,1fr)}
+  .kroj .aa{font-size:120px}
+}
+@media (max-width:480px){
+  .naglowek{padding:20px 16px}
+  .cp{gap:9px}.cp-ikona{width:40px;height:24.5px}.cp-napis{width:109px;height:26px}
+  .cp-slowo{width:109px;height:15.5px}.cp-dopisek{left:30px;top:17.8px;width:79px;height:8.3px}
+  .naglowek strong{font-size:15px}.naglowek .projekt span{font-size:12px}
+  .tekst,.kroj{padding:64px 16px}
+  .rozdzial .opis,.dzielony .opis{padding:72px 16px 40px}
+  .rozdzial h2{font-size:36px}
+  .tekst p,.rozdzial p{font-size:17px}
+  .rysunek,.strona-ksiegi,.budowa{padding-left:16px;padding-right:16px}
+  .ruch .powtorz{right:20px;bottom:-36px}
+  .przedpo{padding:0 16px 56px}
+  .podpis{padding:14px 16px 56px}
+  .social{padding:0 16px 56px;gap:10px}
+  .skrot{padding:56px 16px;gap:8px}
+  .kolor{padding:20px}
+  .kroj .alfabet p{font-size:18px}
+  .grubosci .p{font-size:24px}
+  .autorzy{padding:56px 16px}
+  .pobierz h2{font-size:32px}
+  .przycisk{font-size:17px;padding:18px 24px}
+  .anim-svg{width:72%}
+}
+</style>
+</head>
+<body>
+<header class="naglowek"><span class="cp" role="img" aria-label="Code &amp; Pixel, interactive agency"><svg class="cp-ikona" aria-hidden="true" viewBox="0 0 66.2205 40.5122" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path d="M26.6325 40.2381C27.5676 40.2158 28.6807 40.1936 29.831 40.1936C32.4507 40.1936 34.4768 40.29 35.8571 40.4756C37.8089 40.7427 39.2857 39.5256 41.6754 37.559C42.4843 36.8985 43.4045 36.1415 44.4732 35.3252C46.4398 33.841 48.7478 32.6313 50.8184 31.9485C44.5919 32.0376 37.6456 32.5496 33.23 36.0599L33.2077 36.0748C31.4711 37.6258 29.3783 39.2511 26.6325 40.2307V40.2381Z" fill="currentColor"/>
+<path d="M52.1527 24.223C42.223 25.1952 36.3009 31.8224 34.1784 34.6796C39.4994 31.3994 47.2695 31.3697 54.1935 31.3474C60.9692 31.3251 64.5833 24.9132 65.6817 20.7647C63.3069 23.2137 58.0006 23.6961 53.6295 24.0894C53.1175 24.1339 52.6277 24.1785 52.1527 24.223Z" fill="currentColor"/>
+<path d="M65.9943 19.2878C66.5657 16.3639 65.9646 13.5586 65.1928 11.9037C63.9312 10.7979 62.6028 10.2784 61.0072 10.2784C59.0109 10.2784 56.5396 11.1096 53.3113 12.8833C53.5785 12.861 53.8457 12.8462 54.098 12.8462C56.8735 12.8462 58.5211 14.1969 58.8402 16.7424C59.0554 19.5624 57.1481 21.9818 53.6453 23.4883C58.5062 23.0504 64.51 22.5013 65.9869 19.2804L65.9943 19.2878Z" fill="currentColor"/>
+<path d="M23.5058 40.4014C27.6469 39.8151 30.4298 37.7668 32.8046 35.6443C33.0273 35.2658 34.5635 32.7723 37.5023 30.1452C35.9809 31.1396 34.4151 32.2528 32.8269 33.4699C31.0829 34.8057 29.1979 35.4811 27.2313 35.4811C24.2257 35.4811 21.5614 33.8855 19.8249 32.5051C13.6726 34.6425 8.66328 34.9987 4.96007 33.559C10.155 37.47 17.4129 40.4978 22.1626 40.4978C22.6301 40.4978 23.0902 40.4681 23.4984 40.4088L23.5058 40.4014Z" fill="currentColor"/>
+<path d="M41.8443 9.01685C42.0299 8.0892 42.1486 7.49549 42.2599 7.02053C40.3898 7.77008 37.3396 9.15044 35.4843 10.2636L35.2394 13.0392C36.5084 12.2303 39.8554 10.1078 41.8443 9.02427V9.01685Z" fill="currentColor"/>
+<path d="M34.9124 10.1078C34.0441 6.03349 30.7565 3.4212 26.1182 3.11693C20.4558 2.74587 13.5837 9.01684 11.1347 14.6199C9.74691 17.7962 9.84339 20.4753 11.4167 22.1747C12.144 22.9614 13.2423 23.3547 14.6895 23.3547C14.8082 23.3547 14.9344 23.3473 15.0531 23.3399C13.9548 16.5939 19.1126 5.64016 27.7806 7.37674C31.7435 8.17081 33.9477 11.7404 34.6453 13.0911L34.9124 10.1078Z" fill="currentColor"/>
+<path d="M55.5742 6.10028C48.9693 6.10028 41.7707 10.4343 38.9803 12.2896C30.8614 17.7146 20.7536 23.941 14.6831 23.941C13.0652 23.941 11.811 23.4809 10.9724 22.5681C9.23585 20.6905 9.09484 17.7739 10.5865 14.375C13.1172 8.59382 20.2342 2.13733 26.1489 2.52323C30.9282 2.83492 34.3568 5.47689 35.3958 9.61796C37.3699 8.47508 40.4423 7.09473 42.2382 6.38229C40.3977 3.54736 38.1639 1.94437 34.3791 0.734706C32.8652 0.244903 31.2251 0 29.5033 0C22.1711 0 14.0448 4.57892 9.5995 8.8313C5.65881 12.6013 -2.95728 24.8019 1.02793 29.9077C3.04652 32.4977 6.06697 33.8113 10.0002 33.8113C19.4252 33.8113 32.123 26.301 38.8986 21.7814C38.9358 21.6998 39.01 21.5588 39.1064 21.3658C39.1361 21.3064 39.1658 21.2397 39.2029 21.1729C39.2103 21.158 39.2178 21.1432 39.2326 21.1283C40.702 18.2637 46.4832 8.03723 54.602 6.28581C54.7208 6.25613 54.8395 6.22644 54.9508 6.2116C55.0993 6.18191 55.2477 6.16707 55.4035 6.14481C55.5371 6.12254 55.6633 6.10028 55.8043 6.08544C55.7301 6.08544 55.6484 6.08544 55.5668 6.08544L55.5742 6.10028Z" fill="currentColor"/>
+<path d="M61.2528 7.52516C59.8724 6.93145 58.4253 6.62718 56.9856 6.62718C48.3472 6.62718 41.7571 17.6997 39.9241 21.1283C40.7627 20.5643 41.6681 19.9409 42.6477 19.2211C51.9094 12.4455 57.2305 9.68474 61.0153 9.68474C62.2844 9.68474 63.4346 10.0039 64.4959 10.6421C63.776 9.61795 62.5812 8.30439 61.2602 7.51774L61.2528 7.52516Z" fill="currentColor"/>
+</g>
+</svg>
+<span class="cp-napis"><svg class="cp-slowo" aria-hidden="true" viewBox="0 0 180.594 25.6354" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path d="M15.3464 24.7646C15.3464 24.7646 11.5483 25.5282 8.78852 25.5282C1.56746 25.5282 0 20.9933 0 13.1091C0 5.22488 1.53397 0.522488 8.78852 0.522488C12.0306 0.522488 15.3799 1.25263 15.3799 1.25263L15.2392 3.24211C15.2392 3.24211 11.5416 2.57895 8.96268 2.57895C3.13493 2.57895 2.23062 6.31005 2.23062 13.1091C2.23062 19.9081 3.17512 23.4316 8.99618 23.4316C11.2938 23.4316 15.2392 22.8019 15.2392 22.8019L15.3397 24.7579L15.3464 24.7646Z" fill="currentColor"/>
+<path d="M33.3383 16.2172C33.3383 22.4603 31.9115 25.5282 26.0837 25.5282C20.256 25.5282 18.722 22.7751 18.722 16.1837C18.722 10.0077 20.678 7.42871 26.0837 7.42871C31.1411 7.42871 33.3383 10.1148 33.3383 16.2172ZM31.1746 16.2172C31.1746 11.2268 29.6406 9.31101 26.0837 9.31101C22.0713 9.31101 20.8521 10.9857 20.8521 16.1837C20.8521 21.3818 21.5823 23.6459 26.0837 23.6459C30.5851 23.6459 31.1746 21.2077 31.1746 16.2172Z" fill="currentColor"/>
+<path d="M136.732 0.763647H138.822V3.37609H136.732V0.763647ZM136.732 7.74356H138.822V25.1799H136.732V7.74356Z" fill="currentColor"/>
+<g>
+<path d="M148.697 13.2967L145.133 7.74355H142.836L147.478 14.9512L148.697 13.2967Z" fill="currentColor"/>
+<path d="M156.675 7.74355H154.377L145.616 20.866L142.836 25.1799H145.133L149.742 18.0326L154.344 25.1799H156.675L151.062 16.4651L156.675 7.74355Z" fill="currentColor"/>
+</g>
+<path d="M178.504 0H180.594V25.1799H178.504V0Z" fill="currentColor"/>
+<path d="M48.785 0.763647V22.1053C48.785 22.1053 45.9983 23.5723 43.4127 23.6058C41.3897 23.5723 39.1926 22.7684 39.1926 16.666C39.1926 11.8498 40.3113 9.30432 44.4577 9.30432C45.1007 9.30432 45.9247 9.37131 46.6883 9.45169V7.56939C45.9247 7.48901 45.0873 7.42203 44.384 7.42203C38.9113 7.42203 37.0959 10.5235 37.0959 16.5924C37.0959 24.4766 40.2711 25.5216 43.1983 25.5216C46.1256 25.5216 48.7783 23.9139 48.7783 23.9139V25.1732H50.8682V0.763647H48.7783H48.785Z" fill="currentColor"/>
+<path d="M70.0207 15.6613C70.0207 9.80001 67.6494 7.42871 63.1479 7.42871C58.8944 7.42871 55.9671 9.80001 55.9671 16.5321C55.9671 22.3598 57.5345 25.4948 62.7326 25.5282C65.4522 25.5282 69.391 25.0393 69.391 25.0393L69.324 23.2909C69.324 23.2909 65.4857 23.6058 62.9403 23.6058C59.2963 23.6058 58.1039 21.4622 58.0905 17.3761V15.4938C58.1173 11.0258 59.9929 9.27082 63.1479 9.27082C66.303 9.27082 67.924 10.979 67.924 15.5809H59.8321V17.3225H69.947L70.0207 15.6479V15.6613Z" fill="currentColor"/>
+<path d="M124.701 0.870806H115.879V2.89378H124.701C128.465 2.89378 130.033 4.6689 130.033 8.47369C130.033 12.2785 128.465 14.6833 124.701 14.6833H118.002V5.02392H115.872V25.1799H118.002V16.7397H124.701C129.892 16.7397 132.23 13.6718 132.23 8.47369C132.23 3.2756 129.892 0.870806 124.701 0.870806Z" fill="currentColor"/>
+<path d="M173.694 15.6613C173.694 9.80001 171.323 7.42871 166.828 7.42871C162.574 7.42871 159.641 9.80001 159.641 16.5321C159.641 22.3598 161.208 25.4948 166.406 25.5282C169.126 25.5282 173.064 25.0393 173.064 25.0393L172.991 23.2909C172.991 23.2909 169.152 23.6058 166.614 23.6058C162.963 23.6058 161.771 21.4622 161.764 17.3761V15.4938C161.791 11.0258 163.666 9.27082 166.821 9.27082C169.976 9.27082 171.597 10.979 171.597 15.5809H163.506V17.3225H173.62L173.687 15.6479L173.694 15.6613Z" fill="currentColor"/>
+<g>
+<path d="M99.293 17.8718C99.6614 16.5388 99.9696 14.9981 100.184 13.4239L98.1275 13.3904C98.0069 14.3617 97.826 15.3665 97.6251 16.2775L99.293 17.8718Z" fill="currentColor"/>
+<path d="M91.5369 12.6938C95.3752 11.0861 97.0163 9.48518 97.0163 6.13589C97.0163 2.78661 95.2345 0.797129 91.2288 0.797129C87.4642 0.797129 85.4412 2.88708 85.4412 5.99522C85.4412 7.9445 85.6489 9.12345 87.1359 10.8785L88.7034 12.533L96.1455 20.0153C94.6785 22.5943 92.7627 23.646 89.9359 23.646C85.6422 23.646 83.867 21.623 83.867 17.9991C83.867 15.5273 84.7378 14.1407 86.734 13.1694L85.3943 11.7359C83.0096 12.9282 81.7369 14.6833 81.7369 18.0326C81.7369 22.7751 84.0077 25.6354 89.8623 25.6354C93.4527 25.6354 95.824 24.3761 97.7063 21.4153L102.034 25.5952L103.36 24.1282L91.5369 12.6871V12.6938ZM89.0986 10.2555C87.8058 8.96269 87.5312 7.60958 87.5312 6.17609C87.5312 3.87178 88.8575 2.75981 91.2288 2.75981C93.8412 2.75981 94.8862 4.01245 94.8862 6.24977C94.8862 8.9024 93.5599 10.0144 90.1771 11.3407L89.0986 10.2555Z" fill="currentColor"/>
+</g>
+</g>
+</svg>
+<svg class="cp-dopisek" aria-hidden="true" viewBox="0 0 130.789 13.7187" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path d="M0.00018753 0H0.50928V0.803826H0.00018753V0ZM0.00018753 2.92058H0.50928V10.222H0.00018753V2.92058Z" fill="currentColor"/>
+<path d="M4.40136 10.222V2.92057H4.91045V3.50334C4.91045 3.50334 6.20997 2.78659 7.4626 2.78659C9.45208 2.78659 9.86069 3.59042 9.86069 6.42392V10.2153H9.3516V6.44401C9.3516 3.96554 9.09036 3.24879 7.4626 3.24879C6.16308 3.24879 4.91045 3.97894 4.91045 3.97894V10.2153H4.40136V10.222Z" fill="currentColor"/>
+<path d="M14.5693 3.38946V7.21434C14.5693 9.39138 14.73 9.90047 15.909 9.90047C16.3176 9.90047 17.3425 9.7799 17.3425 9.7799L17.3894 10.2488C17.3894 10.2488 16.4248 10.3627 15.9157 10.3627C14.5827 10.3627 14.0602 9.86698 14.0602 7.76363V3.38277H12.908V2.91386H14.0602V0.535877H14.576V2.91386H17.2353V3.38277H14.576L14.5693 3.38946Z" fill="currentColor"/>
+<path d="M25.2127 9.7598L25.2462 10.2287C25.2462 10.2287 23.6117 10.3627 22.5466 10.3627C20.3696 10.3493 19.8002 8.96267 19.8002 6.57798C19.8002 3.6842 21.0863 2.79329 22.7476 2.79329C24.5428 2.79329 25.5208 3.77128 25.5208 6.29664V6.77894H20.3361C20.3361 8.79521 20.8586 9.88707 22.56 9.88707C23.5782 9.88707 25.2127 9.75311 25.2127 9.75311V9.7598ZM24.9782 6.31004C24.9782 4.07272 24.2615 3.2555 22.7409 3.2555C21.2203 3.2555 20.3294 4.08612 20.3294 6.31004H24.9782Z" fill="currentColor"/>
+<path d="M28.8982 2.92059H29.4073V4.05934C29.4073 4.05934 30.6935 3.08135 32.3011 2.77322V3.26891C30.8676 3.54355 29.4073 4.54164 29.4073 4.54164V10.222H28.8982V2.92059Z" fill="currentColor"/>
+<path d="M39.7952 9.27751C39.8354 9.69952 40.378 9.84689 40.8871 9.88709L40.8536 10.3426C40.2239 10.3426 39.6747 10.1818 39.3531 9.72632C39.3531 9.72632 37.866 10.356 36.3991 10.356C35.2 10.356 34.49 9.63924 34.49 8.22584C34.49 6.98661 35.0727 6.26986 36.5062 6.12249L39.2861 5.83445V5.07752C39.2861 3.80479 38.7302 3.29569 37.6651 3.29569C36.6 3.29569 34.9053 3.54354 34.9053 3.54354L34.8584 3.06124C34.8584 3.06124 36.4928 2.8 37.6651 2.8C39.1455 2.8 39.8019 3.57704 39.8019 5.07752V9.28422L39.7952 9.27751ZM36.5665 6.5713C35.4278 6.68517 35.0326 7.21435 35.0326 8.21914C35.0326 9.28421 35.5282 9.88709 36.4192 9.88709C37.7924 9.88709 39.2861 9.29091 39.2861 9.29091V6.29665L36.5665 6.57799V6.5713Z" fill="currentColor"/>
+<path d="M47.9762 2.93396L47.9494 3.40286C47.9494 3.40286 46.7838 3.2555 46.2212 3.2555C44.3523 3.2555 43.7695 4.09951 43.7695 6.41052C43.7695 8.92248 44.1513 9.88707 46.2212 9.88707C46.7771 9.88707 47.9762 9.75311 47.9762 9.75311L48.003 10.222C48.003 10.222 46.7771 10.356 46.2212 10.356C43.7829 10.356 43.2269 9.35119 43.2269 6.41052C43.2269 3.70429 44.0441 2.78659 46.2212 2.78659C46.7771 2.78659 47.9762 2.93396 47.9762 2.93396Z" fill="currentColor"/>
+<path d="M52.0068 3.38946V7.21434C52.0068 9.39138 52.1676 9.90047 53.3465 9.90047C53.7552 9.90047 54.78 9.7799 54.78 9.7799L54.8202 10.2488C54.8202 10.2488 53.8556 10.3627 53.3465 10.3627C52.0202 10.3627 51.491 9.86698 51.491 7.76363V3.38277H50.3389V2.91386H51.491V0.535877H52.0068V2.91386H54.6595V3.38277H52.0068V3.38946Z" fill="currentColor"/>
+<path d="M57.6759 0H58.185V0.803826H57.6759V0ZM57.6759 2.92058H58.185V10.222H57.6759V2.92058Z" fill="currentColor"/>
+<path d="M61.6463 2.92057L63.7764 9.75311H64.4061L66.5563 2.92057H67.0922L64.8013 10.222H63.3678L61.1037 2.92057H61.6463Z" fill="currentColor"/>
+<path d="M74.997 9.7598L75.0237 10.2287C75.0237 10.2287 73.3826 10.3627 72.3175 10.3627C70.1405 10.3493 69.5711 8.96267 69.5711 6.57798C69.5711 3.6842 70.8572 2.79329 72.5252 2.79329C74.3204 2.79329 75.2984 3.77128 75.2984 6.29664V6.77894H70.1137C70.1137 8.79521 70.6362 9.88707 72.3309 9.88707C73.3491 9.88707 74.9903 9.75311 74.9903 9.75311L74.997 9.7598ZM74.7692 6.31004C74.7692 4.07272 74.0525 3.2555 72.5319 3.2555C71.0113 3.2555 70.1204 4.08612 70.1204 6.31004H74.7692Z" fill="currentColor"/>
+<path d="M87.8392 9.27751C87.8793 9.69952 88.4286 9.84689 88.9377 9.88709L88.9109 10.3426C88.2813 10.3426 87.7253 10.1818 87.4037 9.72632C87.4037 9.72632 85.9167 10.356 84.4497 10.356C83.2506 10.356 82.5339 9.63924 82.5339 8.22584C82.5339 6.98661 83.1167 6.26986 84.5502 6.12249L87.3234 5.83445V5.07752C87.3234 3.80479 86.7674 3.29569 85.7023 3.29569C84.6372 3.29569 82.9425 3.54354 82.9425 3.54354L82.8956 3.06124C82.8956 3.06124 84.5301 2.8 85.6956 2.8C87.176 2.8 87.8325 3.57704 87.8325 5.07752V9.28422L87.8392 9.27751ZM84.6104 6.5713C83.4717 6.68517 83.0765 7.21435 83.0765 8.21914C83.0765 9.28421 83.5722 9.88709 84.4631 9.88709C85.8363 9.88709 87.3234 9.29091 87.3234 9.29091V6.29665L84.6037 6.57799L84.6104 6.5713Z" fill="currentColor"/>
+<path d="M91.2016 11.3943C91.2016 10.4297 91.6571 10.0948 92.4409 9.52538C92.2064 9.37801 92.1193 9.02968 92.1193 8.57418C92.1193 8.35313 92.5547 7.43542 92.5547 7.43542C91.8849 7.21436 91.3021 6.63159 91.3021 5.2115C91.3021 3.47657 92.2332 2.77322 93.794 2.77322C94.5844 2.77322 95.3413 2.96078 95.3413 2.96078L97.3844 2.92059V3.42967H95.8102C96.172 3.7646 96.393 4.20001 96.393 5.2115C96.393 7.04021 95.5624 7.60959 93.7337 7.60959C93.6131 7.60959 93.1174 7.58279 92.9433 7.556C92.9433 7.556 92.6083 8.38662 92.6083 8.57418C92.6083 9.29093 92.6954 9.36461 94.6112 9.36461C96.4198 9.36461 97.1968 9.65934 97.1968 11.468C97.1968 13.0421 96.2591 13.7187 94.0887 13.7187C91.6638 13.7187 91.1949 13.1225 91.1949 11.3943H91.2016ZM92.8227 9.78662C91.9787 10.3694 91.7241 10.6775 91.7241 11.3809C91.7241 12.7675 92.0925 13.2498 94.1088 13.2498C95.9174 13.2498 96.6677 12.7273 96.6677 11.468C96.6677 9.98757 96.0715 9.83351 94.5978 9.83351C93.9949 9.83351 92.8294 9.78662 92.8294 9.78662H92.8227ZM95.8638 5.2115C95.8638 3.56365 95.3212 3.24212 93.7873 3.24212C92.5011 3.24212 91.8313 3.71102 91.8313 5.2115C91.8313 6.52442 92.2667 7.14068 93.7471 7.14068C95.2275 7.14068 95.8705 6.67178 95.8705 5.2115H95.8638Z" fill="currentColor"/>
+<path d="M105.155 9.7598L105.182 10.2287C105.182 10.2287 103.547 10.3627 102.482 10.3627C100.305 10.3493 99.7356 8.96267 99.7356 6.57798C99.7356 3.6842 101.022 2.79329 102.69 2.79329C104.485 2.79329 105.463 3.77128 105.463 6.29664V6.77894H100.278C100.278 8.79521 100.801 9.88707 102.495 9.88707C103.52 9.88707 105.155 9.75311 105.155 9.75311V9.7598ZM104.92 6.31004C104.92 4.07272 104.204 3.2555 102.683 3.2555C101.162 3.2555 100.271 4.08612 100.271 6.31004H104.914H104.92Z" fill="currentColor"/>
+<path d="M108.831 10.222V2.92057H109.34V3.50334C109.34 3.50334 110.64 2.78659 111.899 2.78659C113.882 2.78659 114.29 3.59042 114.29 6.42392V10.2153H113.781V6.44401C113.781 3.96554 113.52 3.24879 111.899 3.24879C110.599 3.24879 109.34 3.97894 109.34 3.97894V10.2153H108.831V10.222Z" fill="currentColor"/>
+<path d="M122.444 2.93396L122.417 3.40286C122.417 3.40286 121.245 3.2555 120.696 3.2555C118.827 3.2555 118.244 4.09951 118.244 6.41052C118.244 8.92248 118.626 9.88707 120.696 9.88707C121.252 9.88707 122.451 9.75311 122.451 9.75311L122.477 10.222C122.477 10.222 121.252 10.356 120.696 10.356C118.257 10.356 117.701 9.35119 117.701 6.41052C117.701 3.70429 118.519 2.78659 120.696 2.78659C121.252 2.78659 122.451 2.93396 122.451 2.93396H122.444Z" fill="currentColor"/>
+<path d="M125.35 2.92057L127.493 9.75311H128.089L130.253 2.92057H130.789L127.446 13.5847H126.904L127.955 10.222H127.064L124.8 2.92057H125.343H125.35Z" fill="currentColor"/>
+</g>
+</svg>
+</span></span><div class="projekt"><strong>Koszulka Fachowca</strong><span>Identyfikacja wizualna · 2026</span></div></header>
+<main>
+<section class="plansza roleta" data-a="plansza" style="background:var(--pom);aspect-ratio:16 / 10"><div class="lamele" aria-hidden="true"><i style="flex:1.4;--i:0"></i><i style="flex:1;--i:1"></i><i style="flex:0.7;--i:2"></i><i style="flex:1.2;--i:3"></i><i style="flex:0.5;--i:4"></i><i style="flex:1;--i:5"></i><i style="flex:1.6;--i:6"></i><i style="flex:0.8;--i:7"></i><i style="flex:1.1;--i:8"></i></div><img src="obrazy/logo-pionowe-biale.svg" alt="Logo Koszulka Fachowca" style="width:58%"></section>
+<section class="plansza" data-a="plansza" style="background:var(--grafit);aspect-ratio:16 / 10"><img src="obrazy/logo-sygnet-negatyw.svg" alt="Sygnet kf." style="width:24%"></section>
+<section class="tekst"><div class="lewa"><dl data-a="w"><dt>Klient</dt><dd>Koszulka Fachowca, koszulkafachowca.pl</dd><dt>Zakres</dt><dd>logo, sygnet, ikona strony, księga znaku, nośniki</dd><dt>Rok</dt><dd>2026</dd></dl></div><div class="prawa"><p class="wypelnij"><span class="sl">Koszulka</span> <span class="sl">Fachowca</span> <span class="sl">to</span> <span class="sl">sklep</span> <span class="sl">internetowy</span> <span class="sl">z koszulkami</span> <span class="sl">dla</span> <span class="sl">fachowców.</span> <span class="sl">Do</span> <span class="sl">tej</span> <span class="sl">pory</span> <span class="sl">sklep</span> <span class="sl">używał</span> <span class="sl">logo</span> <span class="sl">z rysunkową</span> <span class="sl">postacią</span> <span class="sl">robotnika</span> <span class="sl">w żółtym</span> <span class="sl">kole.</span></p><p class="wypelnij"><span class="sl">Nowy</span> <span class="sl">znak</span> <span class="sl">jest</span> <span class="sl">typograficzny:</span> <span class="sl">nazwa</span> <span class="sl">w dwóch</span> <span class="sl">wierszach,</span> <span class="sl">kask</span> <span class="sl">na</span> <span class="sl">pierwszej</span> <span class="sl">literze</span> <span class="sl">„k”</span> <span class="sl">i kwadratowa</span> <span class="sl">kropka.</span> <span class="sl">Klient</span> <span class="sl">chciał</span> <span class="sl">w logo</span> <span class="sl">koszulkę</span> <span class="sl">albo</span> <span class="sl">kask</span> <span class="sl">budowlany.</span> <span class="sl">Kask</span> <span class="sl">stanął</span> <span class="sl">na</span> <span class="sl">literze</span> <span class="sl">„k”,</span> <span class="sl">a koszulka</span> <span class="sl">jest</span> <span class="sl">głównym</span> <span class="sl">nośnikiem</span> <span class="sl">znaku.</span></p><p class="wypelnij"><span class="sl">Do</span> <span class="sl">małych</span> <span class="sl">formatów</span> <span class="sl">służy</span> <span class="sl">sygnet</span> <span class="sl">„kf.”,</span> <span class="sl">z którego</span> <span class="sl">powstała</span> <span class="sl">też</span> <span class="sl">ikona</span> <span class="sl">strony.</span> <span class="sl">Kolory</span> <span class="sl">to</span> <span class="sl">pomarańcz</span> <span class="sl">i grafit,</span> <span class="sl">tłem</span> <span class="sl">są</span> <span class="sl">biel</span> <span class="sl">i beton.</span> <span class="sl">Księgę</span> <span class="sl">znaku</span> <span class="sl">w PDF</span> <span class="sl">można</span> <span class="sl">pobrać</span> <span class="sl">na</span> <span class="sl">końcu</span> <span class="sl">strony.</span></p></div></section>
+<figure class="foto" data-a="foto"><img src="obrazy/2-3-ekipa.webp" srcset="obrazy/2-3-ekipa-m.webp 836w, obrazy/2-3-ekipa.webp 1672w" sizes="(max-width:1400px) 100vw, 1400px" width="1672" height="940" alt="Ekipa w koszulkach marki na budowie" loading="lazy" decoding="async"></figure>
+<section class="tekst"><div class="lewa"><h2 data-a="h"><span class="m"><span style="--i:0">Znak</span></span></h2></div><div class="prawa"><p data-a="w" style="--i:1">Logo tworzą trzy elementy: nazwa w dwóch wierszach, kask na pierwszej literze „k” i kwadratowa kropka. Miarą odległości w znaku jest X, czyli wysokość małej litery „x” w napisie.</p></div></section>
+<section class="przedpo"><figure data-a="w"><figcaption>Dotychczasowe logo</figcaption><div class="karta"><img src="obrazy/stare-logo.jpg" alt="Dotychczasowe logo Koszulka Fachowca" style="width:62%;max-width:321px"></div></figure><figure data-a="w" style="--i:2"><figcaption>Nowe logo</figcaption><div class="karta"><img src="obrazy/logo-pionowe-kolor.svg" alt="Nowe logo Koszulka Fachowca" style="width:70%"></div></figure></section>
+<section class="budowa" data-a="budowa"><svg class="budowa-svg" viewBox="684 405 1140 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Budowa znaku: linie wysokości x i linii bazowej, wymiary kasku, odstępu wierszy i kropki"><rect x="684" y="405" width="1140" height="440" fill="#EEECE7"/><rect class="b-linia" style="--i:0" x="844.00" y="576.39" width="812.00" height="1.00" fill="#FC4C02"/><rect class="b-linia" style="--i:1" x="844.00" y="653.69" width="812.00" height="1.00" fill="#FC4C02"/><rect class="b-linia" style="--i:2" x="844.00" y="687.89" width="812.00" height="1.00" fill="#FC4C02"/><rect class="b-linia" style="--i:3" x="844.00" y="765.19" width="812.00" height="1.00" fill="#FC4C02"/><rect class="b-pion" x="914.39" y="463.00" width="1.00" height="336.69" fill="#A9A8A2"/><svg x="884" y="497" width="760" height="269.94" viewBox="-218.0 -1108.5 5359.0 1903.5"><g fill="#191918"><g class="b-w1"><path d="M173.0 -95.0 L178.0 -342.0 L383.0 -545.0 L629.0 -545.0 L381.0 -287.0 L277.0 -202.0 Z M0.0 0.0 L0.0 -514.2 L208.0 -539.4 L208.0 0.0 Z M396.0 0.0 L238.0 -199.0 L366.0 -357.0 L648.0 0.0 Z M899.0 9.0Q808.0 9.0 738.0 -27.0Q668.0 -63.0 627.5 -126.5Q587.0 -190.0 587.0 -273.0Q587.0 -355.0 627.5 -418.5Q668.0 -482.0 738.0 -518.0Q808.0 -554.0 899.0 -554.0Q990.0 -554.0 1061.0 -518.0Q1132.0 -482.0 1171.5 -418.5Q1211.0 -355.0 1211.0 -273.0Q1211.0 -190.0 1171.5 -126.5Q1132.0 -63.0 1061.0 -27.0Q990.0 9.0 899.0 9.0ZM899.0 -154.0Q928.0 -154.0 950.5 -167.5Q973.0 -181.0 986.5 -208.0Q1000.0 -235.0 1000.0 -273.0Q1000.0 -312.0 986.5 -338.0Q973.0 -364.0 950.5 -377.0Q928.0 -390.0 899.0 -390.0Q870.0 -390.0 847.5 -377.0Q825.0 -364.0 811.5 -338.0Q798.0 -312.0 798.0 -273.0Q798.0 -235.0 811.5 -208.0Q825.0 -181.0 847.5 -167.5Q870.0 -154.0 899.0 -154.0Z M1451.0 9.0Q1382.0 9.0 1315.0 -6.0Q1248.0 -21.0 1207.0 -46.0L1266.0 -185.0Q1305.0 -162.0 1356.0 -148.5Q1407.0 -135.0 1457.0 -135.0Q1501.0 -135.0 1517.5 -143.5Q1534.0 -152.0 1534.0 -167.0Q1534.0 -181.0 1517.0 -187.5Q1500.0 -194.0 1471.5 -197.5Q1443.0 -201.0 1409.5 -205.5Q1376.0 -210.0 1341.5 -219.0Q1307.0 -228.0 1279.0 -246.0Q1251.0 -264.0 1233.5 -294.0Q1216.0 -324.0 1216.0 -371.0Q1216.0 -422.0 1247.0 -463.5Q1278.0 -505.0 1339.0 -529.5Q1400.0 -554.0 1488.0 -554.0Q1547.0 -554.0 1606.0 -543.0Q1665.0 -532.0 1707.0 -509.0L1648.0 -369.0Q1606.0 -392.0 1566.0 -400.5Q1526.0 -409.0 1491.0 -409.0Q1445.0 -409.0 1427.5 -399.5Q1410.0 -390.0 1410.0 -377.0Q1410.0 -363.0 1427.0 -356.0Q1444.0 -349.0 1472.5 -345.5Q1501.0 -342.0 1534.5 -337.5Q1568.0 -333.0 1602.0 -323.5Q1636.0 -314.0 1664.0 -296.5Q1692.0 -279.0 1709.5 -249.0Q1727.0 -219.0 1727.0 -172.0Q1727.0 -123.0 1696.0 -81.5Q1665.0 -40.0 1603.5 -15.5Q1542.0 9.0 1451.0 9.0Z M1732.0 0.0V-121.0L2030.0 -458.0L2065.0 -391.0H1740.0V-545.0H2233.0V-424.0L1935.0 -87.0L1900.0 -153.0H2244.0V0.0Z M2502.0 9.0Q2437.0 9.0 2384.5 -17.0Q2332.0 -43.0 2302.0 -99.0Q2272.0 -155.0 2272.0 -242.0V-545.0H2480.0V-277.0Q2480.0 -217.0 2501.5 -191.5Q2523.0 -166.0 2561.0 -166.0Q2585.0 -166.0 2605.5 -178.0Q2626.0 -190.0 2638.0 -216.5Q2650.0 -243.0 2650.0 -285.0V-545.0H2858.0V0.0H2660.0V-156.0L2699.0 -112.0Q2671.0 -51.0 2617.5 -21.0Q2564.0 9.0 2502.0 9.0Z M2925.0 0.0V-742.0H3133.0V0.0Z M3372.0 -95.0 3377.0 -342.0 3582.0 -545.0H3828.0L3580.0 -287.0L3476.0 -202.0ZM3199.0 0.0V-742.0H3407.0V0.0ZM3595.0 0.0 3437.0 -199.0 3565.0 -357.0 3847.0 0.0Z M4163.0 0.0V-99.0L4149.0 -124.0V-309.0Q4149.0 -352.0 4123.0 -374.5Q4097.0 -397.0 4040.0 -397.0Q4001.0 -397.0 3962.0 -385.0Q3923.0 -373.0 3896.0 -353.0L3828.0 -491.0Q3875.0 -522.0 3940.5 -538.0Q4006.0 -554.0 4070.0 -554.0Q4207.0 -554.0 4282.0 -492.5Q4357.0 -431.0 4357.0 -297.0V0.0ZM4006.0 9.0Q3940.0 9.0 3895.0 -13.5Q3850.0 -36.0 3827.0 -74.0Q3804.0 -112.0 3804.0 -159.0Q3804.0 -210.0 3830.0 -247.0Q3856.0 -284.0 3910.5 -303.5Q3965.0 -323.0 4049.0 -323.0H4170.0V-218.0H4080.0Q4039.0 -218.0 4021.5 -205.0Q4004.0 -192.0 4004.0 -168.0Q4004.0 -146.0 4020.5 -132.5Q4037.0 -119.0 4067.0 -119.0Q4094.0 -119.0 4116.5 -133.0Q4139.0 -147.0 4149.0 -176.0L4177.0 -108.0Q4163.0 -49.0 4120.0 -20.0Q4077.0 9.0 4006.0 9.0Z"/></g><g class="b-w2"><path d="M21.0 786.0V258.0Q21.0 156.0 82.0 95.5Q143.0 35.0 256.0 35.0Q291.0 35.0 326.5 41.5Q362.0 48.0 386.0 62.0L335.0 208.0Q324.0 202.0 310.0 197.5Q296.0 193.0 281.0 193.0Q255.0 193.0 239.0 209.0Q223.0 225.0 223.0 260.0V292.0L229.0 379.0V786.0ZM-56.0 420.0V267.0H347.0V420.0Z M697.0 786.0V687.0L683.0 662.0V477.0Q683.0 434.0 657.0 411.5Q631.0 389.0 574.0 389.0Q535.0 389.0 496.0 401.0Q457.0 413.0 430.0 433.0L362.0 295.0Q409.0 264.0 474.5 248.0Q540.0 232.0 604.0 232.0Q741.0 232.0 816.0 293.5Q891.0 355.0 891.0 489.0V786.0ZM540.0 795.0Q474.0 795.0 429.0 772.5Q384.0 750.0 361.0 712.0Q338.0 674.0 338.0 627.0Q338.0 576.0 364.0 539.0Q390.0 502.0 444.5 482.5Q499.0 463.0 583.0 463.0H704.0V568.0H614.0Q573.0 568.0 555.5 581.0Q538.0 594.0 538.0 618.0Q538.0 640.0 554.5 653.5Q571.0 667.0 601.0 667.0Q628.0 667.0 650.5 653.0Q673.0 639.0 683.0 610.0L711.0 678.0Q697.0 737.0 654.0 766.0Q611.0 795.0 540.0 795.0Z M1248.0 795.0Q1156.0 795.0 1084.0 759.5Q1012.0 724.0 971.5 660.0Q931.0 596.0 931.0 513.0Q931.0 431.0 971.5 367.5Q1012.0 304.0 1084.0 268.0Q1156.0 232.0 1248.0 232.0Q1344.0 232.0 1413.0 273.0Q1482.0 314.0 1510.0 387.0L1349.0 468.0Q1330.0 430.0 1304.0 413.0Q1278.0 396.0 1247.0 396.0Q1218.0 396.0 1194.0 409.0Q1170.0 422.0 1156.0 448.0Q1142.0 474.0 1142.0 513.0Q1142.0 552.0 1156.0 578.5Q1170.0 605.0 1194.0 618.5Q1218.0 632.0 1247.0 632.0Q1278.0 632.0 1304.0 614.5Q1330.0 597.0 1349.0 559.0L1510.0 640.0Q1482.0 713.0 1413.0 754.0Q1344.0 795.0 1248.0 795.0Z M1526.0 786.0V44.0H1734.0V399.0L1685.0 353.0Q1716.0 293.0 1770.0 262.5Q1824.0 232.0 1892.0 232.0Q1955.0 232.0 2006.0 257.5Q2057.0 283.0 2086.5 336.5Q2116.0 390.0 2116.0 475.0V786.0H1908.0V510.0Q1908.0 455.0 1887.0 431.5Q1866.0 408.0 1830.0 408.0Q1803.0 408.0 1781.0 419.5Q1759.0 431.0 1746.5 457.0Q1734.0 483.0 1734.0 527.0V786.0Z M2468.0 795.0Q2377.0 795.0 2307.0 759.0Q2237.0 723.0 2196.5 659.5Q2156.0 596.0 2156.0 513.0Q2156.0 431.0 2196.5 367.5Q2237.0 304.0 2307.0 268.0Q2377.0 232.0 2468.0 232.0Q2559.0 232.0 2630.0 268.0Q2701.0 304.0 2740.5 367.5Q2780.0 431.0 2780.0 513.0Q2780.0 596.0 2740.5 659.5Q2701.0 723.0 2630.0 759.0Q2559.0 795.0 2468.0 795.0ZM2468.0 632.0Q2497.0 632.0 2519.5 618.5Q2542.0 605.0 2555.5 578.0Q2569.0 551.0 2569.0 513.0Q2569.0 474.0 2555.5 448.0Q2542.0 422.0 2519.5 409.0Q2497.0 396.0 2468.0 396.0Q2439.0 396.0 2416.5 409.0Q2394.0 422.0 2380.5 448.0Q2367.0 474.0 2367.0 513.0Q2367.0 551.0 2380.5 578.0Q2394.0 605.0 2416.5 618.5Q2439.0 632.0 2468.0 632.0Z M2931.0 786.0 2740.0 241.0H2937.0L3085.0 690.0H2990.0L3146.0 241.0H3322.0L3471.0 690.0H3379.0L3532.0 241.0H3715.0L3524.0 786.0H3321.0L3199.0 422.0H3260.0L3133.0 786.0Z M3992.0 795.0Q3900.0 795.0 3828.0 759.5Q3756.0 724.0 3715.5 660.0Q3675.0 596.0 3675.0 513.0Q3675.0 431.0 3715.5 367.5Q3756.0 304.0 3828.0 268.0Q3900.0 232.0 3992.0 232.0Q4088.0 232.0 4157.0 273.0Q4226.0 314.0 4254.0 387.0L4093.0 468.0Q4074.0 430.0 4048.0 413.0Q4022.0 396.0 3991.0 396.0Q3962.0 396.0 3938.0 409.0Q3914.0 422.0 3900.0 448.0Q3886.0 474.0 3886.0 513.0Q3886.0 552.0 3900.0 578.5Q3914.0 605.0 3938.0 618.5Q3962.0 632.0 3991.0 632.0Q4022.0 632.0 4048.0 614.5Q4074.0 597.0 4093.0 559.0L4254.0 640.0Q4226.0 713.0 4157.0 754.0Q4088.0 795.0 3992.0 795.0Z M4625.0 786.0V687.0L4611.0 662.0V477.0Q4611.0 434.0 4585.0 411.5Q4559.0 389.0 4502.0 389.0Q4463.0 389.0 4424.0 401.0Q4385.0 413.0 4358.0 433.0L4290.0 295.0Q4337.0 264.0 4402.5 248.0Q4468.0 232.0 4532.0 232.0Q4669.0 232.0 4744.0 293.5Q4819.0 355.0 4819.0 489.0V786.0ZM4468.0 795.0Q4402.0 795.0 4357.0 772.5Q4312.0 750.0 4289.0 712.0Q4266.0 674.0 4266.0 627.0Q4266.0 576.0 4292.0 539.0Q4318.0 502.0 4372.5 482.5Q4427.0 463.0 4511.0 463.0H4632.0V568.0H4542.0Q4501.0 568.0 4483.5 581.0Q4466.0 594.0 4466.0 618.0Q4466.0 640.0 4482.5 653.5Q4499.0 667.0 4529.0 667.0Q4556.0 667.0 4578.5 653.0Q4601.0 639.0 4611.0 610.0L4639.0 678.0Q4625.0 737.0 4582.0 766.0Q4539.0 795.0 4468.0 795.0Z"/></g></g><g class="b-kropka"><path d="M4889.0 786.0 L5141.0 786.0 L5141.0 534.0 L4889.0 534.0 Z" fill="#FC4C02"/></g><g class="b-kask"><g transform="translate(-218.0 -543.4) scale(5.4500 -5.4500)"><path d="M110.53 91.57C124.34 86.84 135.18 75.21 141.12 62.12C142.31 59.49 143.63 57.08 144.59 54.35C151.07 53.29 155.6 49.47 156.26 42.73C160.47 40.78 168.48 38.96 171.04 35.01C173.16 31.73 171.68 26.57 167.4 24.84C163.41 23.23 156.56 21.1 152.22 19.62C139.78 15.41 127.2 10.87 114.8 6.82C103.72 3.2 99.64 3.05 88 3.86C83.91 4.15 79.75 4.61 75.69 5.15C59.72 1.57 13.2 -5.9 2.17 8.5C-4.15 16.75 4.65 24.97 11.8 28.4C10.38 43.22 14.51 61.52 25.18 72.37C27.4 74.62 28.88 75.06 32.1 75.58C50.68 78.57 65.32 62.16 72.09 46.65C73.03 44.49 73.96 40.45 77.29 42.15C80.29 43.68 77.89 47.26 76.78 49.8C69.67 66.06 52.86 84.18 33.32 80.6C37.39 85.51 42.16 89.43 48.71 90.03C68.02 91.79 81.41 78.11 89.68 62.24C92.21 57.37 92.84 54.83 94.72 50.08C95.97 46.94 101.38 48.22 99.93 52.2C92.54 72.58 78.05 95.13 53.76 95.03C60.61 104.21 76.87 105.21 87.1 102.11C106.72 96.16 117.35 76.96 122.4 58.36C123.43 54.56 128.84 55.81 127.63 59.82C123.88 72.24 119.76 82.05 110.53 91.57ZM12.25 24.06C8.72 20 9.5 17.7 14.3 15.76C30.54 9.16 63.66 15.14 80.53 19.55C102.5 25.3 125.41 32.59 147.09 39.45C150.74 40.61 148.85 45.13 145.6 44.18C134.9 41.04 124.11 37.48 113.35 34.31C87.91 26.8 62.36 18.28 35.45 18.22C30.82 18.21 13.56 18.51 12.25 24.06Z" fill="#FC4C02"/></g></g></svg>
+<text class="b-etyk" style="--i:0" x="1666.0" y="576.9" text-anchor="start" dominant-baseline="central" font-size="14" font-weight="500" fill="#6E6D68">wysokość x</text><text class="b-etyk" style="--i:1" x="1666.0" y="654.2" text-anchor="start" dominant-baseline="central" font-size="14" font-weight="500" fill="#6E6D68">linia bazowa</text><text class="b-etyk" style="--i:2" x="1666.0" y="688.4" text-anchor="start" dominant-baseline="central" font-size="14" font-weight="500" fill="#6E6D68">wysokość x</text><text class="b-etyk" style="--i:3" x="1666.0" y="765.7" text-anchor="start" dominant-baseline="central" font-size="14" font-weight="500" fill="#6E6D68">linia bazowa</text><g class="b-wym" style="--i:0"><rect x="857.50" y="576.89" width="1.00" height="77.30" fill="#191918"/><rect x="852.00" y="576.39" width="12.00" height="1.00" fill="#191918"/><rect x="852.00" y="653.69" width="12.00" height="1.00" fill="#191918"/><text class="b-wl" x="846.0" y="615.6" text-anchor="end" dominant-baseline="central" font-size="16" font-weight="700" fill="#191918">X</text></g><g class="b-wym" style="--i:1"><rect x="801.50" y="654.19" width="1.00" height="111.50" fill="#191918"/><rect x="796.00" y="653.69" width="12.00" height="1.00" fill="#191918"/><rect x="796.00" y="765.19" width="12.00" height="1.00" fill="#191918"/><text class="b-wl" x="790.0" y="709.9" text-anchor="end" dominant-baseline="central" font-size="16" font-weight="700" fill="#191918">1,44 X</text></g><g class="b-wym" style="--i:2"><rect x="884.00" y="474.50" width="132.89" height="1.00" fill="#191918"/><rect x="883.50" y="469.00" width="1.00" height="12.00" fill="#191918"/><rect x="1016.39" y="469.00" width="1.00" height="12.00" fill="#191918"/><text class="b-wl" x="950.5" y="456.0" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="700" fill="#191918">1,72 X</text></g><g class="b-wym" style="--i:3"><rect x="1608.30" y="783.19" width="35.69" height="1.00" fill="#191918"/><rect x="1607.80" y="777.69" width="1.00" height="12.00" fill="#191918"/><rect x="1643.50" y="777.69" width="1.00" height="12.00" fill="#191918"/><text class="b-wl" x="1626.1" y="804.7" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="700" fill="#191918">0,46 X</text></g></svg><button class="powtorz" type="button" aria-label="Powtórz animację budowy znaku"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4.5h4.5"/></svg>Powtórz</button></section>
+<p class="podpis" data-a="w">Kask ma 1,72 X szerokości i jest wysunięty o 0,40 X w lewo od pnia „k”. Bok kropki ma 0,46 X.</p>
+<section class="plansza" data-a="plansza" style="background:var(--pom);aspect-ratio:16 / 9"><img src="obrazy/logo-sygnet-biale.svg" alt="Sygnet kf. w bieli" style="width:22%"></section>
+<p class="podpis" data-a="w">Sygnet „kf.” do małych formatów: ikona strony, czapka, okrągłe naklejki i metki.</p>
+<section class="tekst"><div class="lewa"><h2 data-a="h"><span class="m"><span style="--i:0">Kolor</span></span></h2></div><div class="prawa"><p data-a="w" style="--i:1">Marka ma cztery kolory. Pomarańcz to kolor kasku i kropki, grafit to kolor napisu. Biel i beton są tłem.</p></div></section>
+<section class="paleta" data-a="paleta"><div class="kolor ciemny" style="background:#FC4C02"><strong>Pomarańcz</strong><div><span>HEX #FC4C02</span><span>CMYK 0 80 95 0</span><span>Pantone 1655 C</span></div></div><div class="kolor ciemny" style="background:#191918"><strong>Grafit</strong><div><span>HEX #191918</span><span>CMYK 0 0 0 100</span><span>Pantone Neutral Black C</span></div></div><div class="kolor jasny" style="background:#FFFFFF"><strong>Biel</strong><div><span>HEX #FFFFFF</span><span>CMYK 0 0 0 0</span></div></div><div class="kolor jasny" style="background:#EEECE7"><strong>Beton</strong><div><span>HEX #EEECE7</span><span>CMYK 7 7 10 0</span></div></div></section>
+<section class="tekst"><div class="lewa"><h2 data-a="h"><span class="m"><span style="--i:0">Krój</span></span> <span class="m"><span style="--i:1">pisma</span></span></h2></div><div class="prawa"><p data-a="w" style="--i:1">Krój marki to Montserrat: ma komplet polskich znaków i wolną licencję SIL Open Font License. Napis w logo powstał z Montserrata o grubości 850 i jest zamieniony na krzywe.</p></div></section>
+<section class="kroj" data-a="kroj"><div class="aa">Aa</div><div class="alfabet"><p>AĄBCĆDEĘFGHIJKLŁMNŃOÓPQRSŚTUVWXYZŹŻ</p><p>aąbcćdeęfghijklłmnńoópqrsśtuvwxyzźż</p><p>0123456789 &amp;@%!?.,:;„”()</p></div><ul class="grubosci"><li><span class="g">ExtraBold 800</span><span class="u">nagłówki</span><span class="p" style="font-weight:800">Zażółć gęślą jaźń</span></li><li><span class="g">SemiBold 600</span><span class="u">śródtytuły, przyciski</span><span class="p" style="font-weight:600">Zażółć gęślą jaźń</span></li><li><span class="g">Medium 500</span><span class="u">podpisy, etykiety</span><span class="p" style="font-weight:500">Zażółć gęślą jaźń</span></li><li><span class="g">Regular 400</span><span class="u">tekst</span><span class="p" style="font-weight:400">Zażółć gęślą jaźń</span></li></ul></section>
+<section class="rozdzial"><div class="opis"><span class="nr" data-a="w">#01</span><h2 data-a="h"><span class="m"><span style="--i:0">Koszulka</span></span></h2><p data-a="w" style="--i:3">Na plecach logo pionowe ma od 28 do 32 cm szerokości, na środku piersi od 22 do 26 cm.</p></div></section>
+<figure class="foto" data-a="foto"><img src="obrazy/2-1-okladka.webp" srcset="obrazy/2-1-okladka-m.webp 724w, obrazy/2-1-okladka.webp 1448w" sizes="(max-width:900px) 100vw, 700px" width="1448" height="1086" alt="Fachowiec przy pracy, na plecach grafitowej koszulki logo Koszulka Fachowca" loading="lazy" decoding="async"></figure>
+<section class="para"><figure class="foto" data-a="foto"><img src="obrazy/c-2-2-koszulka.webp" srcset="obrazy/c-2-2-koszulka-m.webp 561w, obrazy/c-2-2-koszulka.webp 1122w" sizes="(max-width:900px) 100vw, 700px" width="1122" height="1402" alt="Przód białej koszulki z logo na piersi" loading="lazy" decoding="async"></figure><figure class="foto" data-a="foto"><img src="obrazy/c-2-16-koszulka.webp" srcset="obrazy/c-2-16-koszulka-m.webp 561w, obrazy/c-2-16-koszulka.webp 1122w" sizes="(max-width:900px) 100vw, 700px" width="1122" height="1402" alt="Złożone grafitowe koszulki z logo w negatywie" loading="lazy" decoding="async"></figure></section>
+<section class="rozdzial"><div class="opis"><span class="nr" data-a="w">#02</span><h2 data-a="h"><span class="m"><span style="--i:0">Bluza</span></span> <span class="m"><span style="--i:1">i czapka</span></span></h2><p data-a="w" style="--i:3">Bluza ma logo w negatywie na piersi, czapka wyhaftowany sygnet.</p></div></section>
+<section class="para"><figure class="foto" data-a="foto"><img src="obrazy/c-2-4-bluza.webp" srcset="obrazy/c-2-4-bluza-m.webp 561w, obrazy/c-2-4-bluza.webp 1122w" sizes="(max-width:900px) 100vw, 700px" width="1122" height="1402" alt="Grafitowa bluza z logo w negatywie" loading="lazy" decoding="async"></figure><figure class="foto" data-a="foto"><img src="obrazy/c-2-5-czapka.webp" srcset="obrazy/c-2-5-czapka-m.webp 561w, obrazy/c-2-5-czapka.webp 1122w" sizes="(max-width:900px) 100vw, 700px" width="1122" height="1402" alt="Czapka z wyhaftowanym sygnetem" loading="lazy" decoding="async"></figure></section>
+<section class="plansza" data-a="plansza" style="background:var(--pom);aspect-ratio:16 / 9"><img src="obrazy/logo-poziome-biale.svg" alt="Logo poziome w bieli" style="width:52%"></section>
+<section class="rozdzial"><div class="opis"><span class="nr" data-a="w">#03</span><h2 data-a="h"><span class="m"><span style="--i:0">Kask</span></span> <span class="m"><span style="--i:1">i smycz</span></span></h2><p data-a="w" style="--i:3">Na kasku logo zajmuje około jednej czwartej szerokości. Smycz jest pomarańczowa, z białym logo poziomym.</p></div></section>
+<section class="para"><figure class="foto" data-a="foto"><img src="obrazy/c-2-6-kask.webp" srcset="obrazy/c-2-6-kask-m.webp 561w, obrazy/c-2-6-kask.webp 1122w" sizes="(max-width:900px) 100vw, 700px" width="1122" height="1402" alt="Biały kask z małym logo" loading="lazy" decoding="async"></figure><figure class="foto" data-a="foto"><img src="obrazy/c-2-7-smycz.webp" srcset="obrazy/c-2-7-smycz-m.webp 561w, obrazy/c-2-7-smycz.webp 1122w" sizes="(max-width:900px) 100vw, 700px" width="1122" height="1402" alt="Pomarańczowa smycz z identyfikatorem" loading="lazy" decoding="async"></figure></section>
+<section class="rozdzial dzielony"><div class="opis"><span class="nr" data-a="w">#04</span><h2 data-a="h"><span class="m"><span style="--i:0">Naklejki</span></span></h2><p data-a="w" style="--i:3">Naklejki prostokątne mają logo, okrągłe sygnet.</p></div><figure class="foto" data-a="foto"><img src="obrazy/c-2-9-skrzynka.webp" srcset="obrazy/c-2-9-skrzynka-m.webp 561w, obrazy/c-2-9-skrzynka.webp 1122w" sizes="(max-width:900px) 100vw, 700px" width="1122" height="1402" alt="Naklejka z sygnetem na skrzynce narzędziowej" loading="lazy" decoding="async"></figure></section>
+<figure class="foto" data-a="foto"><img src="obrazy/c-2-8-naklejki.webp" srcset="obrazy/c-2-8-naklejki-m.webp 724w, obrazy/c-2-8-naklejki.webp 1448w" sizes="(max-width:900px) 100vw, 700px" width="1448" height="1086" alt="Arkusz naklejek z logo i sygnetem" loading="lazy" decoding="async"></figure>
+<section class="rozdzial dzielony"><div class="opis"><span class="nr" data-a="w">#05</span><h2 data-a="h"><span class="m"><span style="--i:0">Wysyłka</span></span></h2><p data-a="w" style="--i:3">Karton dostaje logo w kolorze, grafitowy foliopak logo w negatywie.</p></div><figure class="foto" data-a="foto"><img src="obrazy/c-2-11-foliopak.webp" srcset="obrazy/c-2-11-foliopak-m.webp 561w, obrazy/c-2-11-foliopak.webp 1122w" sizes="(max-width:900px) 100vw, 700px" width="1122" height="1402" alt="Grafitowa koperta foliowa z logo w negatywie" loading="lazy" decoding="async"></figure></section>
+<figure class="foto" data-a="foto"><img src="obrazy/c-2-10-karton.webp" srcset="obrazy/c-2-10-karton-m.webp 724w, obrazy/c-2-10-karton.webp 1448w" sizes="(max-width:900px) 100vw, 700px" width="1448" height="1086" alt="Karton wysyłkowy z logo" loading="lazy" decoding="async"></figure>
+<section class="plansza" data-a="plansza" style="background:var(--grafit);aspect-ratio:16 / 9"><img src="obrazy/logo-sygnet-negatyw.svg" alt="Sygnet kf. na graficie" style="width:22%"></section>
+<section class="rozdzial dzielony"><div class="opis"><span class="nr" data-a="w">#06</span><h2 data-a="h"><span class="m"><span style="--i:0">Metki</span></span></h2><p data-a="w" style="--i:3">Metka w kołnierzu ma sygnet w wersji małej.</p></div><figure class="foto" data-a="foto"><img src="obrazy/c-2-12-metki.webp" srcset="obrazy/c-2-12-metki-m.webp 561w, obrazy/c-2-12-metki.webp 1122w" sizes="(max-width:900px) 100vw, 700px" width="1122" height="1402" alt="Metka w kołnierzu i metka wisząca z sygnetem" loading="lazy" decoding="async"></figure></section>
+<section class="rozdzial"><div class="opis"><span class="nr" data-a="w">#07</span><h2 data-a="h"><span class="m"><span style="--i:0">Wizytówki</span></span></h2><p data-a="w" style="--i:3">Przód wizytówki ma logo na bieli, rewers sygnet na pomarańczu.</p></div></section>
+<figure class="foto" data-a="foto"><img src="obrazy/c-2-13-wizytowki.webp" srcset="obrazy/c-2-13-wizytowki-m.webp 724w, obrazy/c-2-13-wizytowki.webp 1448w" sizes="(max-width:900px) 100vw, 700px" width="1448" height="1086" alt="Wizytówki: przód z logo, rewers z sygnetem na pomarańczu" loading="lazy" decoding="async"></figure>
+<section class="rozdzial dzielony"><div class="opis"><span class="nr" data-a="w">#08</span><h2 data-a="h"><span class="m"><span style="--i:0">Sklep</span></span> <span class="m"><span style="--i:1">i ikona</span></span> <span class="m"><span style="--i:2">strony</span></span></h2><p data-a="w" style="--i:3">W nagłówku sklepu stoi logo poziome. Ikona w karcie przeglądarki powstała z sygnetu, przy 16 i 32 px nie ma kropki.</p></div><figure class="foto ekran" data-a="foto"><img src="obrazy/2-14-sklep-wygaszony.webp" srcset="obrazy/2-14-sklep-wygaszony-m.webp 561w, obrazy/2-14-sklep-wygaszony.webp 1122w" sizes="(max-width:900px) 100vw, 700px" width="1122" height="1402" alt="" loading="lazy" decoding="async"><img class="wl" src="obrazy/2-14-sklep.webp" srcset="obrazy/2-14-sklep-m.webp 561w, obrazy/2-14-sklep.webp 1122w" sizes="(max-width:900px) 100vw, 700px" width="1122" height="1402" alt="Sklep internetowy na ekranie telefonu" loading="lazy" decoding="async"></figure></section>
+<figure class="foto" data-a="foto"><img src="obrazy/c-2-18-laptop.webp" srcset="obrazy/c-2-18-laptop-m.webp 768w, obrazy/c-2-18-laptop.webp 1536w" sizes="(max-width:900px) 100vw, 700px" width="1536" height="1024" alt="Sklep internetowy na ekranie laptopa" loading="lazy" decoding="async"></figure>
+<figure class="foto" data-a="foto"><img src="obrazy/2-15-favikona.webp" srcset="obrazy/2-15-favikona-m.webp 1200w, obrazy/2-15-favikona.webp 2400w" sizes="(max-width:1400px) 100vw, 1400px" width="2400" height="1350" alt="Karta przeglądarki z ikoną strony Koszulka Fachowca" loading="lazy" decoding="async"></figure>
+<section class="rozdzial"><div class="opis"><span class="nr" data-a="w">#09</span><h2 data-a="h"><span class="m"><span style="--i:0">Social</span></span> <span class="m"><span style="--i:1">media</span></span> <span class="m"><span style="--i:2">i baner</span></span></h2><p data-a="w" style="--i:3">Przykładowe posty z produktami i cenami ze sklepu oraz baner na ogrodzenie budowy.</p></div></section>
+<section class="social"><figure class="post" data-a="w" style="--i:0"><img src="obrazy/social-post-1-koszulka.webp" srcset="obrazy/social-post-1-koszulka-m.webp 540w, obrazy/social-post-1-koszulka.webp 1080w" sizes="(max-width:900px) 100vw, 700px" width="1080" height="1350" alt="Post: koszulka z ceną na graficie" loading="lazy" decoding="async"></figure><figure class="post" data-a="w" style="--i:1"><img src="obrazy/social-post-2-polar.webp" srcset="obrazy/social-post-2-polar-m.webp 540w, obrazy/social-post-2-polar.webp 1080w" sizes="(max-width:900px) 100vw, 700px" width="1080" height="1350" alt="Post: polar z haftem na pomarańczu" loading="lazy" decoding="async"></figure><figure class="post" data-a="w" style="--i:2"><img src="obrazy/social-post-3-haslo.webp" srcset="obrazy/social-post-3-haslo-m.webp 540w, obrazy/social-post-3-haslo.webp 1080w" sizes="(max-width:900px) 100vw, 700px" width="1080" height="1350" alt="Post: hasło na zdjęciu" loading="lazy" decoding="async"></figure><figure class="post" data-a="w" style="--i:3"><img src="obrazy/social-post-4-softshell.webp" srcset="obrazy/social-post-4-softshell-m.webp 540w, obrazy/social-post-4-softshell.webp 1080w" sizes="(max-width:900px) 100vw, 700px" width="1080" height="1350" alt="Post: softshell na betonie" loading="lazy" decoding="async"></figure></section>
+<figure class="foto" data-a="foto"><img src="obrazy/c-2-17-baner.webp" srcset="obrazy/c-2-17-baner-m.webp 768w, obrazy/c-2-17-baner.webp 1536w" sizes="(max-width:900px) 100vw, 700px" width="1536" height="1024" alt="Baner z logo na ogrodzeniu budowy" loading="lazy" decoding="async"></figure>
+<section class="plansza" data-a="plansza" style="background:var(--pom);aspect-ratio:16 / 10"><img src="obrazy/logo-pionowe-biale.svg" alt="Logo Koszulka Fachowca" style="width:58%"></section>
+<section class="tekst"><div class="lewa"><h2 data-a="h"><span class="m"><span style="--i:0">Księga</span></span> <span class="m"><span style="--i:1">znaku</span></span></h2></div><div class="prawa"><p data-a="w" style="--i:1">Księga ma 32 strony. Podaje pole ochronne i minimalne rozmiary znaku, wartości kolorów do druku oraz rozmieszczenie logo na odzieży w milimetrach.</p></div></section>
+<section class="strona-ksiegi" data-a="w"><img src="obrazy/ksiega-paleta.webp" srcset="obrazy/ksiega-paleta-m.webp 1200w, obrazy/ksiega-paleta.webp 2400w" sizes="(max-width:1400px) 100vw, 1400px" width="2400" height="1350" alt="Strona księgi znaku" loading="lazy" decoding="async"></section>
+<section class="strona-ksiegi" data-a="w"><img src="obrazy/ksiega-odziez.webp" srcset="obrazy/ksiega-odziez-m.webp 1200w, obrazy/ksiega-odziez.webp 2400w" sizes="(max-width:1400px) 100vw, 1400px" width="2400" height="1350" alt="Strona księgi znaku" loading="lazy" decoding="async"></section>
+<section class="strona-ksiegi" data-a="w"><img src="obrazy/ksiega-ikona.webp" srcset="obrazy/ksiega-ikona-m.webp 1200w, obrazy/ksiega-ikona.webp 2400w" sizes="(max-width:1400px) 100vw, 1400px" width="2400" height="1350" alt="Strona księgi znaku" loading="lazy" decoding="async"></section>
+<section class="skrot"><div class="kafel pom" data-a="w" style="grid-area:logo;--i:0"><img class="znak" src="obrazy/logo-pionowe-biale.svg" alt="Logo Koszulka Fachowca"></div><div class="kafel zdj" data-a="w" style="grid-area:foto;--i:1"><img src="obrazy/c-2-6-kask.webp" srcset="obrazy/c-2-6-kask-m.webp 350w, obrazy/c-2-6-kask.webp 701w" sizes="(max-width:900px) 100vw, 700px" width="701" height="1402" alt="Kask z naklejką logo" loading="lazy" decoding="async"></div><div class="kafel beton" data-a="w" style="grid-area:syg;--i:2"><img class="znak" src="obrazy/logo-sygnet-kolor.svg" alt="Sygnet kf."></div><div class="kafel bial" data-a="w" style="grid-area:aa;--i:3"><span class="aa">Aa</span><span class="podp">Montserrat</span></div><div class="kafel pal" data-a="w" style="grid-area:pal;--i:4"><div class="pasy"><i style="background:#FC4C02"></i><i style="background:#191918"></i><i style="background:#FFFFFF"></i><i style="background:#EEECE7"></i></div></div><div class="kafel grafit" data-a="w" style="grid-area:kask;--i:5"><img class="znak" src="obrazy/logo-kask-biale.svg" alt="Kask z logo"></div><div class="kafel zdj post" data-a="w" style="grid-area:post;--i:6"><img src="obrazy/social-post-1-koszulka.webp" srcset="obrazy/social-post-1-koszulka-m.webp 540w, obrazy/social-post-1-koszulka.webp 1080w" sizes="(max-width:900px) 100vw, 700px" width="1080" height="1350" alt="Przykładowy post" loading="lazy" decoding="async"></div><div class="kafel zdj" data-a="w" style="grid-area:ekipa;--i:7"><img src="obrazy/c-2-17-baner.webp" srcset="obrazy/c-2-17-baner-m.webp 768w, obrazy/c-2-17-baner.webp 1536w" sizes="(max-width:900px) 100vw, 700px" width="1536" height="768" alt="Baner z logo na ogrodzeniu budowy" loading="lazy" decoding="async"></div><div class="kafel zdj" data-a="w" style="grid-area:tel;--i:8"><img src="obrazy/c-2-16-koszulka.webp" srcset="obrazy/c-2-16-koszulka-m.webp 500w, obrazy/c-2-16-koszulka.webp 1000w" sizes="(max-width:900px) 100vw, 700px" width="1000" height="1000" alt="Złożona koszulka z nadrukiem logo" loading="lazy" decoding="async"></div></section>
+<section class="autorzy"><dl><div data-a="w" style="--i:0"><dt>Klient</dt><dd>Koszulka Fachowca</dd></div><div data-a="w" style="--i:1"><dt>Projekt</dt><dd>Code&amp;Pixel</dd></div><div data-a="w" style="--i:2"><dt>Zdjęcia</dt><dd>Wizualizacje poglądowe</dd></div><div data-a="w" style="--i:3"><dt>Rok</dt><dd>2026</dd></div></dl></section>
+<section class="pobierz" id="pobierz"><h2 data-a="h"><span class="m"><span style="--i:0">Księga</span></span> <span class="m"><span style="--i:1">znaku</span></span> <span class="m"><span style="--i:2">w PDF</span></span></h2><p data-a="w" style="--i:3">PDF · 32 strony · 4,2 MB</p><a class="przycisk" data-a="w" style="--i:4" href="pliki/koszulka-fachowca-ksiega-znaku.pdf" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16"/></svg>Pobierz PDF brandingu</a></section>
+</main>
+<footer class="stopka">Koszulka Fachowca · identyfikacja wizualna · 2026</footer>
+<script>
+(() => {
+  if (!document.documentElement.classList.contains('ruch')) return;
+  const io = new IntersectionObserver(wpisy => {
+    for (const e of wpisy) if (e.isIntersecting) { e.target.classList.add('w'); io.unobserve(e.target); }
+  }, {rootMargin: '0px 0px -12% 0px', threshold: 0.12});
+  document.querySelectorAll('[data-a]').forEach(el => io.observe(el));
+  document.querySelectorAll('.powtorz').forEach(b => b.addEventListener('click', () => {
+    const s = b.closest('.budowa');
+    s.classList.remove('w'); void s.offsetWidth; s.classList.add('w');
+  }));
+  // wstęp: wyrazy przechodzą z szarego w grafit w tempie przewijania
+  const akapity = [...document.querySelectorAll('.wypelnij')].map(p => [p, [...p.querySelectorAll('.sl')]]);
+  let ramka = 0;
+  const wypelnij = () => {
+    ramka = 0;
+    const vh = innerHeight;
+    for (const [p, sl] of akapity) {
+      const r = p.getBoundingClientRect();
+      if (r.bottom < -vh || r.top > 2 * vh) continue;
+      const k = Math.min(1, Math.max(0, (vh * 0.86 - r.top) / (r.height + vh * 0.3)));
+      const n = Math.round(k * sl.length);
+      sl.forEach((s, i) => s.classList.toggle('on', i < n));
+    }
+  };
+  // zdjęcia: obraz przesuwa się wolniej niż strona, najwyżej o 3% wysokości kadru
+  const foty = [...document.querySelectorAll('[data-a=foto]')].map(f => [f, [...f.querySelectorAll('img')]]);
+  const paralaksa = () => {
+    const vh = innerHeight;
+    for (const [f, im] of foty) {
+      const r = f.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > vh) continue;
+      const k = (r.top + r.height / 2 - vh / 2) / (vh / 2 + r.height / 2);
+      const y = (-k * 0.03 * r.height).toFixed(1);
+      for (const i of im) i.style.translate = `0 ${y}px`;
+    }
+  };
+  const klatka = () => { wypelnij(); paralaksa(); };
+  addEventListener('scroll', () => { if (!ramka) ramka = requestAnimationFrame(klatka); }, {passive: true});
+  addEventListener('resize', klatka);
+  klatka();
+})();
+</script>
+</body>
+</html>
